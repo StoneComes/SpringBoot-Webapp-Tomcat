@@ -6,4 +6,6 @@ RUN  rm -rf $DIR_WEBAPP/*
 
 ADD target/*.war $DIR_WEBAPP/ROOT.war
 
+RUN sleep 5m
+
 CMD ["catalina.sh", "run"]
